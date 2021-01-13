@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <h1 class="logo">Trend~</h1>
+
+    <div class="formContainer">
+        <h1>Login or Signup to Enter</h1>
+        <input type="email" placeholder="email" id="email"/>
+        <input type="password" placeholder="password" id="password">
+    
+        <button onclick="signUp()" id="signUp" class="btn">Sign Up</button>
+        <button onclick="signIn()" id="signIn" class="btn in">Sign In</button>
+    </div>
+    
+
+     <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-auth.js"></script>
+
+     <script src="app.js"></script>
+</body>
+</html>

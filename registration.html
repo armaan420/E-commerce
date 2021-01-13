@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>E Commerce</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">Trend~</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="registration.html">Registration</a></li>
+                </ul>
+            </nav>
+            <button onclick="signOut()" id="signUp">Sign Out</button>
+        </div>
+    </div>
+    
+    <!-- Showcase -->
+    <section class="showcase">
+        <div class="container grid">
+            <div class="showcase-text">
+                <h1>Get the latest now!</h1>
+                <p>20% off for New members.Limited deal</p>
+            </div>
+            
+            <div class="showcase-form card">
+                <h2>Register Now:</h2>
+                <h4 class="saved">Contact has been saved.</h4>
+                </form> -->
+                 <form class="contact-form">
+                    <div class="form-control">
+                        <input class="name" type="text" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-control">
+                        <input class="phone" type="number" name="company" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-control">
+                        <input class="email" type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <input type="submit" value="Submit" class="btn btn-primary go">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+    </section>
+
+    <!-- Cli --
+
+    <!-- Cloud -->
+    <section class="cloud bg-primary my-2 py-2">
+        <div class="container grid">
+            <div class="text-center">
+                <h2 class="lg">Get to know us</h2>
+                <p class="lead my-1">Send us a message</p>
+                <form class="message">
+                  <textarea  placeholder="Enter your message." class="msg" cols="40" rows="10"></textarea>
+                    <input type="submit" value="Send" class="btn btn-primary" >
+                </form>
+            </div>
+            <img class = "cart-img" src="images/cart.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- Languages -->
+   
+
+    <!-- Footer -->
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3">
+            <div>
+                <h1>Trend~
+                </h1>
+                <p>Copyright &copy; 2020</p>
+            </div>
+            <nav>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="registration.html">Registration</a></li>
+            </nav>
+            <div class="social">
+                <a href="https://github.com/"><i class="fab fa-github fa-2x"></i></a>
+                <a href="https://twitter.com/" ><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-auth.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
