@@ -9,12 +9,16 @@ var firebaseConfig = {
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
+
+//create key: value
 let contactInfo = firebase.database().ref('infos'); 
 let message = firebase.database().ref('message');
+let product = firebase.database().ref('product');
 const auth = firebase.auth();
 
 document.querySelector('.contact-form').addEventListener('submit', submitForm);
 document.querySelector('.message').addEventListener('submit', addMessage);
+// document.querySelector('.btn-buy').addEventListener('click', addProduct);
 
 
 function signUp(){
@@ -78,7 +82,7 @@ function submitForm(e) {
     isSaved.style.display = 'inline'
     setTimeout(() => {
         isSaved.style.display = 'none'
-    },2000)
+    },3000)
 
     document.querySelector('.contact-form').reset();
 
@@ -93,10 +97,18 @@ function addMessage(e){
     const newMsg = message.push();
     newMsg.set({ newMessage });
     
-
-
     document.querySelector('.message').reset();
 
+    alert('Message sent')
+}
+
+function addProduct(name){
+
+
+    let newProduct = product.push();
+    newProduct.set({ product : name })
+
+    alert(`${name} saved in our database.`)
 }
 
 

@@ -252,8 +252,9 @@ pre {
 
 /* Features */
 .features-main{
-  background: url(../images/homeWall.jpg);
-  height: 500px;
+  background: url('https://i.pinimg.com/originals/54/80/eb/5480eb94935252d7919b6a3e3afc4315.gif') center/cover;
+
+  height: 700px;
 }
 
 .features-head img,
