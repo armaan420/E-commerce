@@ -35,10 +35,9 @@ function signUp(){
    
    
 function signIn(){    
-    let userName = document.getElementById('userN');
     let email = document.getElementById("email");
     let password = document.getElementById("password");
-    
+
     const promise = auth.signInWithEmailAndPassword(email.value, password.value);
     promise.then(() => {
         window.location = 'home.html';
@@ -48,7 +47,6 @@ function signIn(){
     })
     
 }
-
 
 
 
